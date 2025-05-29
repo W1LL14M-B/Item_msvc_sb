@@ -22,7 +22,7 @@ private ProductFeingClient client;
 public List<Item> findAll() {
     return client.findAll()
     .stream()
-    .map(p -> new Item (p, new Random().nextInt(10) + 1))
+    .map(product -> new Item (product, new Random().nextInt(10) + 1))
     .collect(Collectors.toList());
 }
 
@@ -36,7 +36,7 @@ if(product == null ) {
     return Optional.empty();
 }
 
-    return Optional.ofNullable(new Item(client.details(id), new Random().nextInt(10) + 1));
+    return Optional.of(new Item(product, new Random().nextInt(10) + 1));
 
 }
 
