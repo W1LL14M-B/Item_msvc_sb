@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.william.springcloud.msvc.items.clients.ProductFeingClient;
 import com.example.william.springcloud.msvc.items.models.Item;
-import com.example.william.springcloud.msvc.items.models.Product;
+import com.example.william.springcloud.msvc.items.models.Product; 
 
 @Service
 public class ItemServiceFeign implements ItemService {
